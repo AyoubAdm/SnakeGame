@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer type="module" ></script>
+    <title>Snake Game</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            position: absolute;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            inset:0;
+            z-index: 10;
+            background: #57CF23;
+            background: -webkit-linear-gradient(to right, #57CF23 32%, #e6881e 88%);
+            background: -moz-linear-gradient(to right, #57CF23 32%, #e6881e 88%);
+            background: linear-gradient(to right, #57CF23 32%, #e6881e 88%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        
+        small{
+            color :rgb(28, 80, 221);
+        }
+
+        .hide {
+            display: none;
+        }
+        canvas{
+
+            padding: 0;
+            margin: auto;
+            display: block;
+            border:solid;
+        }
+        input {
+            margin: .4rem;
+        }
+        </style>
+</head>
+<body>
+    <h1 class = >Snake Game<p >press any key to start</p></h1>
+   <canvas width="300px" height="400px" class="hide">Canvas semble ne pas fonctionner :(</canvas> 
+   <h2 class="hide"></h2>
+   <div class="hide">
+        <input type="range" id="speed" name="Speed" min="1" max="60" value="10">
+        <label class="vitesse" for="speed">vitesse du serpent (10 par defaut) : 10</label>
+    </div>
+   
+</body>
+</html>
